@@ -1,4 +1,6 @@
 ---
+fallback/default.png: fallback/default-6f828ecc15b1bd7f70a487f0abda44b8.png
+fallback/default/index.png: fallback/default-6f828ecc15b1bd7f70a487f0abda44b8.png
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 stadium.png: stadium-5800c2ce24e75ec75963d503979b7cd7.png
