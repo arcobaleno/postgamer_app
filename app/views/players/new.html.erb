@@ -1,0 +1,22 @@
+<% provide(:title, 'Score') %>
+<h1>Player</h1>
+
+<div class="row">
+	<div class="span6 offset3">
+		
+	
+<%= form_for(@player) do |f| %>
+
+	<%= f.label :score_one %>
+	<%= f.text_field :score_one %>
+
+	<%= f.label :score_two %>
+	<%= f.text_field :score_two %>
+
+	<%= f.label :user_id %>
+	<%= f.text_field :user_id %>
+
+	<%= f.submit "Post My Score", class: "btn btn-large btn-primary" %>
+<% end %>
+	</div>
+</div>

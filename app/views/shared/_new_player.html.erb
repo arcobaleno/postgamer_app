@@ -1,0 +1,14 @@
+<div>
+<%= form_for(@player) do |f| %>
+
+	<%= f.label :score_one %>
+	<%= f.text_field :score_one %>
+
+	<%= f.label :score_two %>
+	<%= f.text_field :score_two %>
+
+	<%= f.hidden_field :user_id, :value => current_user.id %>
+
+	<%= f.submit "Post My Score", class: "btn btn-mini btn-inverse" %>
+<% end %>
+</div>

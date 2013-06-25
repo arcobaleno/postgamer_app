@@ -1,0 +1,11 @@
+<table class="table table-bordered">
+	<tr>
+         <th rowspan="2" style="width:50px; height:30px;"><%= image_tag micropost.user.avatar_url.to_s, :id => 'profile' %></th>
+        <th>Name</th>
+        <th>Post:</th>
+	</tr>
+	<tr>
+        <td><%= micropost.user.first_name %> <%= micropost.user.last_name %></td>
+        <td><%= micropost.content %></td>
+    </tr>
+</table>

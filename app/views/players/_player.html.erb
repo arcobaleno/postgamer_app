@@ -1,0 +1,11 @@
+<table class="table table-bordered">
+	<tr>
+         <th rowspan="2" style="width:50px; height:30px;"><%= image_tag player.user.avatar_url.to_s, :id => 'profile' %></th>
+        <th>Name</th>
+        <th>Score:</th>
+	</tr>
+	<tr>
+        <td><%= player.user.first_name %> <%= player.user.last_name %></td>
+        <td> <%= player.score_one %> - <%= player.score_two %></td>
+    </tr>
+</table>
