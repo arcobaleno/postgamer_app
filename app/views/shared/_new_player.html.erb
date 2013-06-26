@@ -1,14 +1,30 @@
-<div>
+
+
 <%= form_for(@player) do |f| %>
 
-	<%= f.label :score_one %>
-	<%= f.text_field :score_one %>
-
-	<%= f.label :score_two %>
-	<%= f.text_field :score_two %>
+		<table class="table table-bordered">
+			<tr>
+				<td><%= f.label :score_one, "BRUINS", :class => "center" %></td>
+				<td><%= f.label :score_two, "HAWKS", :class => "center" %></td>
+			</tr>
+			<tr>
+				<div class="row">
+					<div class="span1">
+						<td><%= f.text_area :score_one, :class => "score_input", :rows => "2" %></td>
+					</div>
+					<div class="span1">
+						<td><%= f.text_area :score_two, :class => "score_input2", :rows => "2" %></td>
+					</div>
+				</div>
+			</tr>
+			<tr>
+				<td><center><%= link_to "away", "http://bruins.nhl.com/" %></center></td>
+				<td><center><%= link_to "home", "http://blackhawks.nhl.com/" %></center></td>
+			</tr>
+		</table>
 
 	<%= f.hidden_field :user_id, :value => current_user.id %>
-
+	<div id="post_score_button">
 	<%= f.submit "Post My Score", class: "btn btn-mini btn-inverse" %>
+	</div>
 <% end %>
-</div>
