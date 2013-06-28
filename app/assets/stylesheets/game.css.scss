@@ -30,16 +30,6 @@ div#bantr_feed {
 
 /* Scores */
 
-.score_input {
-			margin-left:80px;
-			width:40px;
-}
-
-.score_input2 {
-			margin-left:80px;
-			width:40px;
-}
-
 div#post_score_button {
 			position:relative;
 			top:-130px;
@@ -55,3 +45,7 @@ div#score_feed {
 h3#scores {
 		font-size:40px;
 }
+
+.score_input {width:40px;margin-left:80px;}
+
+.score_input2 {width:40px;margin-left:80px;}
