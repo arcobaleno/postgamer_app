@@ -14,6 +14,9 @@ gem 'coffee-rails', '3.2.2'
 gem 'uglifier', '1.2.3'
 
 group :development, :test do
+  gem 'guard-livereload', require: false
+  gem 'rack-livereload'
+  gem 'rb-fsevent', require: false
   gem 'taps'
   gem 'pg'
   gem 'rspec-rails', '2.11.0'
