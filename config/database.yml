@@ -16,7 +16,7 @@ development:
   adapter: postgresql
   database: postgamer_app_development
   pool: 5
-  username: travisbrault
+  username: vannguyen
   password:
   host: localhost
 
