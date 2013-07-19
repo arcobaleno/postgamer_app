@@ -1,4 +1,4 @@
-<% provide(:title, full_name(@user.first_name, @user.last_name)) %>
+<% provide(:title, full_name(@user)) %>
 
 <div class="row">
 	<%-# User Profile Picture -%>
@@ -10,7 +10,7 @@
 		<section>
 			<p>
 			<h1>
-				<%= full_name(@user.first_name, @user.last_name) %>
+				<%= full_name(@user) %>
 			</h1>
 		    </p>
 

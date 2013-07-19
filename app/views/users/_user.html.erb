@@ -9,7 +9,7 @@
         <% end %>
 	</tr>
 	<tr>
-    	<th><%= link_to user.first_name + " " + user.last_name, user %></th>
+    	<th><%= link_to full_name(user), user %></th>
         <td>
             <%= user.email %>
         </td>
