@@ -1,0 +1,26 @@
+<div class="player_scoreboard">
+	<table class="table table-bordered">
+		<tr>
+			<td>BRUINS</td>
+			<td>HAWKS</td>
+		</tr>
+		<tr>
+			<div class="row">
+				<div class="span2" class="center">
+					<td>
+						<%= @player_exist.score_one %>
+					</td>
+				</div>
+				<div class="span2" class="center">
+					<td>
+						<%= @player_exist.score_two %>
+					</td>
+				</div>
+			</div>
+		</tr>
+		<tr>
+			<td><center><%= link_to "away", "http://bruins.nhl.com/" %></center></td>
+			<td><center><%= link_to "home", "http://blackhawks.nhl.com/" %></center></td>
+		</tr>
+	</table>
+</div>
